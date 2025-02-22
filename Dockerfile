@@ -3,9 +3,7 @@ FROM python:3.10-slim
 WORKDIR /app
 COPY . /app
 
-RUN pip3 install --upgrade pip && \
-    pip3 install -r requirements.txt && \
-    pip3 install --upgrade Flask Werkzeug 
+RUN pip3 install -r requirements.txt && \
 
 EXPOSE 8000
 
